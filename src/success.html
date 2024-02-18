@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: white;
+      }
+
+      .attribution a {
+        color: hsl(4, 100%, 67%);
+      }
+    </style>
+  </head>
+  <body class="bg-grey-darkSlate">
+    <main>
+      <section
+        class="flex h-screen flex-col justify-center bg-white px-6 md:mx-auto md:mt-28 md:h-[520px] md:w-[504px] md:rounded-3xl md:p-16"
+      >
+        <div class="h1 flex h-1/2 flex-col justify-end">
+          <img
+            src="../assets/images/icon-success.svg"
+            alt="success icon"
+            class="mb-10 h-16 w-16"
+          />
+
+          <!-- Success message start -->
+
+          <h2
+            class="font-roboto text-4xl font-bold leading-none text-grey-darkSlate md:text-[56px]"
+          >
+            Thanks for subscribing!
+          </h2>
+        </div>
+
+        <div class="flex h-1/2 flex-col justify-between">
+          <p class="mt-6 w-full text-grey-darkSlate">
+            A confirmation email has been sent to
+            <span class="font-roboto font-bold">ash@loremcompany.com</span>.
+            Please open it and click the button inside to confirm your
+            subscription.
+          </p>
+
+          <button
+            class="hover:to-orange my-6 w-full rounded-lg bg-grey-darkSlate pb-3.5 pl-[48px] pr-[46px] pt-[18px] font-roboto font-bold text-white hover:bg-gradient-to-b hover:from-tomato hover:drop-shadow-2xl"
+          >
+            Dismiss message
+          </button>
+        </div>
+
+        <!-- Success message end -->
+      </section>
+    </main>
+
+    <div class="attribution mt-6">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Sérgio Nunes</a>.
+    </div>
+  </body>
+</html>

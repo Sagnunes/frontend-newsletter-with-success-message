@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link href="./output.css" rel="stylesheet" />
     <link
       rel="icon"
       type="image/png"
@@ -21,35 +21,115 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        color: white;
       }
+
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: hsl(4, 100%, 67%);
       }
     </style>
   </head>
-  <body>
-    <!-- Sign-up form start -->
+  <body class="bg-grey-darkSlate">
+    <main>
+      <section
+        class="mx-auto bg-white md:mt-28 md:flex md:h-[641px] md:w-[928px] md:flex-row-reverse md:rounded-2xl"
+      >
+        <header>
+          <div class="sm:block md:hidden lg:hidden xl:hidden">
+            <img
+              src="../assets/images/illustration-sign-up-mobile.svg"
+              alt="mobile image"
+            />
+          </div>
+          <div class="p-4 pr-6 sm:hidden md:block">
+            <img
+              src="../assets/images/illustration-sign-up-desktop.svg"
+              alt="mobile image"
+            />
+          </div>
+        </header>
+        <!-- Sign-up form start -->
 
-    Stay updated! Join 60,000+ product managers receiving monthly updates on:
-    Product discovery and building what matters Measuring to ensure updates are
-    a success And much more! Email address email@company.com Subscribe to
-    monthly newsletter
+        <section
+          class="px-4 md:mr-12 md:flex md:w-[376px] md:flex-col md:justify-center"
+        >
+          <h1
+            class="mb-6 mt-10 font-roboto text-4xl font-bold text-grey-darkSlate"
+          >
+            Stay updated!
+          </h1>
 
-    <!-- Sign-up form end -->
+          <p class="mb-6 font-roboto text-base font-normal text-grey-darkSlate">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
 
-    <!-- Success message start -->
+          <ul class="space-y-3">
+            <li class="flex flex-row space-x-4">
+              <img src="../assets/images/icon-list.svg" alt="list icon" />
+              <span
+                class="font-roboto text-base font-normal text-grey-darkSlate"
+                >Product discovery and building what matters</span
+              >
+            </li>
 
-    Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message
+            <li class="flex flex-row space-x-4">
+              <img src="../assets/images/icon-list.svg" alt="list icon" />
+              <span
+                class="font-roboto text-base font-normal text-grey-darkSlate"
+                >Measuring to ensure updates are a success</span
+              >
+            </li>
 
-    <!-- Success message end -->
+            <li class="flex flex-row space-x-4">
+              <img src="../assets/images/icon-list.svg" alt="list icon" />
+              <span
+                class="font-roboto text-base font-normal text-grey-darkSlate"
+                >And much more!</span
+              >
+            </li>
+          </ul>
 
-    <div class="attribution">
+          <div class="mt-10 flex flex-col md:w-full">
+            <div class="flex flex-row justify-between">
+              <label for="email" class="text-xs font-bold text-grey-darkSlate">
+                Email address
+              </label>
+              <span class="font-roboto text-xs font-bold text-tomato"
+                >Valid email required</span
+              >
+            </div>
+            <input
+              id="email"
+              type="email"
+              placeholder="email@company.com"
+              class="mt-2 w-full rounded-lg border-[1px] border-grey-normal p-3 font-roboto placeholder-grey-normal placeholder:text-base focus:border-grey-darkSlate focus:text-grey-darkSlate"
+            />
+          </div>
+
+          <button
+            class="hover:to-orange my-6 w-full rounded-lg bg-grey-darkSlate pb-3.5 pl-[48px] pr-[46px] pt-[18px] font-roboto font-bold text-white hover:bg-gradient-to-b hover:from-tomato hover:drop-shadow-2xl"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </section>
+
+        <!-- Sign-up form end -->
+      </section>
+    </main>
+
+    <!--    &lt;!&ndash; Success message start &ndash;&gt;-->
+
+    <!--    Thanks for subscribing! A confirmation email has been sent to-->
+    <!--    ash@loremcompany.com. Please open it and click the button inside to confirm-->
+    <!--    your subscription. Dismiss message-->
+
+    <!--    &lt;!&ndash; Success message end &ndash;&gt;-->
+
+    <div class="attribution mt-6">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Sérgio Nunes</a>.
     </div>
   </body>
 </html>
