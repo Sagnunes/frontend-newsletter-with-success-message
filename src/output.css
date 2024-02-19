@@ -596,6 +596,10 @@ video {
   display: flex;
 }
 
+.hidden{
+  display: none;
+}
+
 .h-1\/2{
   height: 50%;
 }
@@ -859,13 +863,9 @@ video {
   color: hsl(4 100% 67% / var(--tw-text-opacity));
 }
 
-@media (min-width: 375px){
+@media (min-width: 640px){
   .sm\:block{
     display: block;
-  }
-
-  .sm\:hidden{
-    display: none;
   }
 }
 
